@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game pegue o Grinch</title>
+</head>
+<body>
+  <header>
+    <header>
+      <div class="center">
+        <h3>
+          <span>Pegue&nbsp;o&nbsp;grinch</span>
+          <span>Pegue&nbsp;o&nbsp;grinch</span>
+          <span>Pegue&nbsp;o&nbsp;grinch</span>
+        </h3>
+      </div>
+      <br><br><br><br><br><br><br><br><br>
+  </header>
+     <!--catalogo-->
+      <main>
+        <input type="text" placeholder="Informe uma pagina" id="name"></input>
+        <button onclick="pesq()" class="button-31" role="button">Pesquisar</button>
+        <section class="integrantes">
+          <h2 align="center">Catalogo:</h2>
+          <div class="integrante">
+            <h1>Cadastro de Jogos</h1>
+
+    <div id="cadastro" class="inputdown">
+        <form id="cadastroForm" enctype="multipart/form-data">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="plataform">Plataforma:</label>
+            <input type="text" id="plataform" name="plataform" required><br>
+
+            <label for="url">URL:</label>
+            <input type="text" id="url" name="url" required><br>
+            
+            <label for="thumbnailpath">Thumbnail:</label>
+            <input type="text" id="thumbnailpath" name="thumbnailpath" required><br>
+         
+            <button type="button" onclick="cadastrarJogo()">✔Cadastrar</button>
+            <button type="button" onclick="deletarJogo()">❌Excluir</button>
+        </form>
+    </div>
+         <div id="divimagem">
+			<h2>Lista de Jogos</h2><br>
+            <button type="button" onclick="ListarJogos()">🔎Pesquisar</button>
+            <header>
+        
+    		</header>
+
+    		<aside>
+        		<!-- Barra lateral, se necessário -->
+   			 </aside>
+
+    		<main>
+        	<table class="blueTable" id="jogos-tabela">
+	            <thead>
+	                <tr>
+	                    <th>ID</th>
+	                    <th>Nome do Jogo</th>
+	                    <th>Plataforma</th>
+	                    <th>URL</th>
+	                    <th>Imagem</th>
+	                </tr>
+            	</thead>
+            	<tbody>
+                	<!-- A tabela de funcionários será carregada aqui -->
+            	</tbody>
+        	</table>
+        </div>
+    </div> 
+          </div>
+        </section>
+      </main>
+      <div>
+      <footer>
+        <a href="pag0.html"><button class="button-66" role="button">Home</button></a>
+        <a href="pag1.html"><button class="button-66" role="button">Historia</button></a>
+        <a href="pag4.html"><button class="button-66" role="button">comandos</button></a>
+        <a href="pag2.html"><button class="button-66" role="button">personagem</button></a>
+        <a href="pag3.html"><button class="button-66" role="button">Download</button></a>
+        <a href="pag5.html"><button class="button-66" role="button">squad</button></a>
+        <a href="doc/package-summary.html"><button class="button-66" role="button">Documentação</button></a>
+      </footer>
+      </div>
+
+</body>
+</html>
